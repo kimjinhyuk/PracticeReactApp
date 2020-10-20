@@ -6,8 +6,12 @@
 }
 
 .home,
-.services,
-.products,
+.about,
+.record,
+.test,
+.models,
+.screening,
+.visualization,
 .sign-up {
   display: flex;
   height: 90vh;
@@ -16,8 +20,8 @@
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('/images/img-2.jpg');
+.about {
+  background-image: url('/images/img-7.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,10 +29,45 @@
   font-size: 100px;
 }
 
-.products {
-  background-image: url('/images/img-1.jpg');
+.record {
+  background-image: url('/images/img-10.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+
+.test {
+  background-image: url('/images/img-13.jpg');
   background-position: center;
   background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.models {
+  background-image: url('/images/img-5.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.screening {
+  background-image: url('/images/img-11.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.visualization {
+  background-image: url('/images/img-6.jpg');
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;

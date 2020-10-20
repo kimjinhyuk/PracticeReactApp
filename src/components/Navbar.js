@@ -30,8 +30,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            FEBREATH  &nbsp;
-          <i className='fas fa-lungs-virus' />
+            FeB  &nbsp;
+          <i className='fab fa-angrycreative' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -58,6 +58,15 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 RECORD
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/test'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                TEST
               </Link>
             </li>
 
