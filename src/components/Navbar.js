@@ -10,6 +10,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  // 창 크기에 따라 버튼 사라짐
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -17,7 +18,7 @@ function Navbar() {
       setButton(true);
     }
   };
-
+  // 창 크기 줄어졌을때 회원가입버튼 생성
   useEffect(() => {
     showButton();
   }, []);
@@ -29,8 +30,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            FEBREATH
-            <i class='fab fa-typo3' />
+            FEBREATH  &nbsp;
+          <i className='fas fa-lungs-virus' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
