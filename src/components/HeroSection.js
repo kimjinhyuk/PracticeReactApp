@@ -1,7 +1,8 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
+import { ButtonRecord } from './Button';
 import './HeroSection.css';
+
 
 
 function HeroSection() {
@@ -9,15 +10,15 @@ function HeroSection() {
     <div className="hero-container">
       <video src="/videos/video-1.mp4" autoPlay loop muted />
       <h1>Febreath</h1>
-      <p>영상/음성 데이터로 코로나19 진단</p>
+      <p>코로나19 종식을 위해 목소리를 녹음 해 주세요</p>
       <div className="hero-btns">
-        <Button
+        <ButtonRecord
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
           Get Started
-        </Button>      
+        </ButtonRecord>      
       </div>
     </div>
   );
