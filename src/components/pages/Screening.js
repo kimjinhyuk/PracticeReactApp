@@ -1,6 +1,12 @@
 import React from 'react'
-import '../../App.css'
+import '../../style.css'
+import Footer from '../Footer'
 
 export default function Screening(){
-  return <h1 className='screening'>Screening</h1>
+  return (
+    <>
+      <h1 className='screening'>Screening</h1>
+      <Footer />
+    </>
+  )
 }

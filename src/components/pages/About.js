@@ -1,6 +1,12 @@
 import React from 'react'
-import '../../App.css'
+import '../../style.css'
+import Footer from '../Footer'
 
 export default function About(){
-  return <h1 className='about'>About US</h1>
+  return (
+    <>
+      <h1 className='about'>About US</h1>
+      <Footer />
+    </>
+  )
 }

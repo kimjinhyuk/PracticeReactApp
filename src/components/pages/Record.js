@@ -1,6 +1,12 @@
 import React from 'react'
-import '../../App.css'
+import '../../style.css'
+import Footer from '../Footer'
 
 export default function Record(){
-  return <h1 className='record'>Record</h1>
+  return (
+    <>
+      <h1 className='record'>Record</h1>
+      <Footer />
+    </>
+  )
 }

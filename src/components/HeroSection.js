@@ -1,9 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../style.css';
 import { ButtonRecord } from './Button';
 import './HeroSection.css';
-
-
 
 function HeroSection() {
   return (
