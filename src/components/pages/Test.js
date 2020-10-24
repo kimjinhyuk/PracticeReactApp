@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../style.css';
 import { ButtonTest } from '../Button';
 import Footer from '../Footer';
@@ -16,7 +16,7 @@ export default function Test(){
           buttonSize="btn--large"
         >
           Get Started
-        </ButtonTest>      
+        </ButtonTest>
       </div>
     </div>
     <Footer />
