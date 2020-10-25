@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import '../../style.css';
 import { ButtonTest } from '../Button';
 import Footer from '../Footer';
+// import Modal from '../Modal';
+
+
 
 export default function Test(){
   return (
