@@ -12,6 +12,11 @@ class SurveyComponent extends Component {
   }
   render() {
     const json = {
+      "title": "코로나19 음성수집",
+      "description": "여러분의 목소리가 코로나19 진단에 큰 도움이 됩니다",
+      "logo": "https://surveyjs.io/favicon.ico",
+      "logoWidth": 60,
+      "logoHeight": 60,
       showQuestionNumbers: "off",
       questions: [
         {
@@ -57,15 +62,18 @@ class SurveyComponent extends Component {
           isRequired: true,
           startWithNewLine: true,
           choicesMax: 16,
+          "colCount": 4
         },
         {
           type: "dropdown",
-          name: "kid4Age",
-          title: "The fourth kid age:",
-          visibleIf: "{haveKids}='Yes' and {kids} >= 4",
+          name: "address",
+          title: "사는 지역을 선택 해 주세요",
           isRequired: true,
-          startWithNewLine: false,
-          choicesMax: 18,
+          choicesMax: 3,
+          choicesByUrl: {
+            url: "https://restcountries.eu/rest/v2/all",
+            valueName: "name"
+          }
         }
       ],
     };
