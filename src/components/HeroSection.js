@@ -3,7 +3,7 @@ import '../style.css';
 import { ButtonRecord } from './Button';
 import './HeroSection.css';
 
-function HeroSection() {
+export default function HeroSection() {
   return (
     <div className="hero-container">
       <video src="/videos/video-1.mp4" autoPlay loop muted />
@@ -22,4 +22,3 @@ function HeroSection() {
   );
 }
 
-export default HeroSection

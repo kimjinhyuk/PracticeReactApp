@@ -30,6 +30,15 @@ h1 {
   color: #fff;
   font-size: 100px;
 }
+.survey {
+  background-image: url('/images/img-7.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
 .record {
   background-image: url('/images/img-10.jpg');
   background-position: center;
@@ -471,6 +480,56 @@ h1 {
   display: none;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+  border: none;
+}
+
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
@@ -551,4 +610,5 @@ h1 {
     color: #242424;
     transition: 250ms;
   }
+
 }
